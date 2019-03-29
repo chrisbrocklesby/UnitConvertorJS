@@ -1,0 +1,42 @@
+<header class="bar bar-nav">
+    <h1 class="title">Volume Convertor</h1>
+</header>
+
+
+<div class="content">
+    <div class="content-padded">
+
+        <div class="input-group">
+            <div class="input-row">
+                <label>From</label>
+                <select id="convertVolFrom">
+                    <option value="Litre">Litre</option>
+                    <option value="Millilitre">Millilitre</option>
+                    <option value="Gallon">Gallon</option>
+                </select>
+            </div>
+
+            <div class="input-row">
+                <label>To</label>
+                <select id="convertVolTo">
+                    <option value="Litre">Litre</option>
+                    <option value="Millilitre">Millilitre</option>
+                    <option value="Gallon">Gallon</option>
+                </select>
+            </div>
+
+            <div class="input-row">
+                <label>Volume</label>
+
+                <input class="form-control" id="vol" type="number" placeholder="Liquid Volume">
+            </div>
+        </div>
+
+        <br>
+
+        <button class="btn btn-positive btn-block" onclick="convertVolume()">Convert</button>
+
+        <div id="result"></div>
+
+    </div>
+</div>

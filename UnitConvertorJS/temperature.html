@@ -1,0 +1,42 @@
+<header class="bar bar-nav">
+    <h1 class="title">Temperature Convertor</h1>
+</header>
+
+
+<div class="content">
+    <div class="content-padded">
+
+        <div class="input-group">
+            <div class="input-row">
+                <label>From</label>
+                <select id="convertTempFrom">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </div>
+
+            <div class="input-row">
+                <label>To</label>
+                <select id="convertTempTo">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </div>
+
+            <div class="input-row">
+                <label>Temperature</label>
+
+                <input class="form-control" id="temp" type="number" placeholder="Temperature">
+            </div>
+        </div>
+
+        <br>
+
+        <button class="btn btn-positive btn-block" onclick="convertTemperature()">Convert</button>
+
+        <div id="result"></div>
+
+    </div>
+</div>
